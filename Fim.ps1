@@ -89,6 +89,6 @@ elseif ($response -eq "B".ToUpper()) {
 }
 
 else {
-    Write-out "The Parameter $($response) you entered is not part of the option"
-    Write-Out "Please Enter either A or B"
+    Write-Host "The Parameter $($response) you entered is not part of the option"
+    Write-Host "Please Enter either A or B"
 }
