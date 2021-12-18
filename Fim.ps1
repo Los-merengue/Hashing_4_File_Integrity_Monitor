@@ -20,13 +20,8 @@ Write-Host "    B) Begin monitoring files with saved Baseline?"
 Write-Host ""
 $response = Read-Host -Prompt "Please enter 'A' or 'B'"
 Write-Host ""
-Write-Host "User Entered $($response)"
+Write-Host "User Entered $($response.ToUpper())"
 
-While (($response.ToUpper() -ne "A") -and ($reponse.ToUpper() -ne "B")){
-    Write-Host "The Parameter $($response.ToUpper()) you entered is not part of the option"
-    
-    $response = Read-Host -Prompt "Please Enter A or B"
-}
 
 if ($response -eq "A".ToUpper()) {
     # Delete baseline.txt if it already exists
