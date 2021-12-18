@@ -22,6 +22,11 @@ $response = Read-Host -Prompt "Please enter 'A' or 'B'"
 Write-Host ""
 Write-Host "User Entered $($response)"
 
+While (($response -ne "A".ToUpper()) -or ($reponse -ne "B".ToUpper())){
+    Write-Host "The Parameter $($response.ToUpper()) you entered is not part of the option"
+    Write-Host "Please Enter either A or B"  
+}
+
 if ($response -eq "A".ToUpper()) {
     # Delete baseline.txt if it already exists
     Erase-Baseline-If-Already-Exists
@@ -88,7 +93,7 @@ elseif ($response -eq "B".ToUpper()) {
     }
 }
 
-else {
-    Write-Host "The Parameter $($response.ToUpper()) you entered is not part of the option"
-    Write-Host "Please Enter either A or B"
-}
+##else {
+  ##  Write-Host "The Parameter $($response.ToUpper()) you entered is not part of the option"
+    ##Write-Host "Please Enter either A or B"
+##}
