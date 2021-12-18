@@ -56,7 +56,7 @@ While (($response.ToUpper() -ne "A") -and ($response.ToUpper() -ne "B")){
 
         # Begin (continuously) monitoring files with saved Baseline
         while ($true) {
-            Start-Sleep -Seconds 1
+            Start-Sleep -Seconds 2
         
             $files = Get-ChildItem -Path .\Files
 
