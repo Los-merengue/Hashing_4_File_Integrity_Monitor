@@ -22,7 +22,7 @@ $response = Read-Host -Prompt "Please enter 'A' or 'B'"
 Write-Host ""
 Write-Host "User Entered $($response)"
 
-While (($response -ne "A".ToUpper()) -or ($reponse -ne "B".ToUpper())){
+While (($response -ne "A".ToUpper()) -and ($reponse -ne "B".ToUpper())){
     Write-Host "The Parameter $($response.ToUpper()) you entered is not part of the option"
     
     $response = Read-Host -Prompt "Please Enter A or B"
