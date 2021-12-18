@@ -24,7 +24,8 @@ Write-Host "User Entered $($response)"
 
 While (($response -ne "A".ToUpper()) -or ($reponse -ne "B".ToUpper())){
     Write-Host "The Parameter $($response.ToUpper()) you entered is not part of the option"
-    Write-Host "Please Enter either A or B"  
+    Write-Host "Please Enter either A or B" 
+    break 
 }
 
 if ($response -eq "A".ToUpper()) {
