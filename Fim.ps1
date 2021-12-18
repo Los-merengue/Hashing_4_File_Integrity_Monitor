@@ -20,7 +20,7 @@ Write-Host "    B) Begin monitoring files with saved Baseline?"
 Write-Host ""
 $response = Read-Host -Prompt "Please enter 'A' or 'B'"
 Write-Host ""
-Write-Host "User Entered $($respons)"
+Write-Host "User Entered $($response)"
 
 if ($response -eq "A".ToUpper()) {
     # Delete baseline.txt if it already exists
