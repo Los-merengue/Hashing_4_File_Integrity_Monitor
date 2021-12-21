@@ -68,7 +68,7 @@ While (($response.ToUpper() -ne "A") -and ($response.ToUpper() -ne "B")){
                 # Notify if a new file has been created
                 if ($fileHashDictionary[$hash.Path] -eq $null) {
                     # A new file has been created!
-                    Write-Host "$($hash.Path) has been created!" -ForegroundColor Green
+                    Write-Host "Help, they have created $($hash.Path) in this folder!" -ForegroundColor Green
                 }
                 else {
 
